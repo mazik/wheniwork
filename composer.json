@@ -1,0 +1,34 @@
+{
+    "name": "mazik/wheniwork",
+    "description": "A simple Wheniwork wrapper package for Laravel",
+    "keywords": ["wheniwork", "wheniwork-api", "wheniwork-api-for-laravel"],
+    "type": "library",
+    "require": {
+        "php": ">=7.1.3",
+        "wheniwork/wheniwork-api": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Mazedul Islam Khan",
+            "email": "mazedulislamkhan@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Mazik\\Wheniwork\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mazik\\Wheniwork\\WheniworkServiceProvider"
+            ]
+        }
+    }
+}
